@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
 require 'cucumber'
-require 'pry'
 
 # Require our own step definitions and other files to support steps execution
 ARGV << "--require"
