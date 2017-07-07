@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+require 'cucumber'
+require 'pry'
+
+# Require our own step definitions and other files to support steps execution
+ARGV << "--require"
+ARGV << File.dirname(__FILE__) + '/../lib'
+
+# The dup is to keep ARGV intact, so that tools like ruby-debug can respawn.
+Cucumber::Cli::Main.new(ARGV.dup).execute!
