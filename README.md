@@ -32,7 +32,7 @@ At this point the tool makes quite a few assumptions and very rigid in terms of 
 - Always run the tool via Bundler, eq. `bundle exec theme-specs`;
 - You can opt-in for more concise reporting style (Jekyll's favorite) by using `-f Jekyll::Cucumber::Formatter` option, eq. `bundle exec theme-specs -f Jekyll::Cucumber::Formatter`;
 
-There is also `minima-theme-specs` repository that is a work in progress of building `minima` theme
+There is also [`minima-theme-specs`](https://github.com/ptsurbeleu/minima-theme-specs) repository that is a work in progress of building `minima` theme
 validations. We will start with a few simple things and expand coverage further.
 
 ## Development
