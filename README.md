@@ -27,10 +27,10 @@ Or install it yourself as:
 
 At this point the tool makes quite a few assumptions and very rigid in terms of the configuration options available.
 
-- All your features MUST be placed in "features" folder (Cucumber default);
-- Before running your theme's specs, it is a MUST to run "bundle" or "bundle install";
-- Always run the tool via Bundler, eq. "bundle exec theme-specs";
-- You can opt-in for more concise reporting style (Jekyll's favorite) by using `-f Jekyll::Cucumber::Formatter` option, eq. "bundle exec theme-specs -f Jekyll::Cucumber::Formatter";
+- All your features MUST be placed in `features` folder (Cucumber default);
+- Before running your theme's specs, it is a MUST to run `bundle` or `bundle install`;
+- Always run the tool via Bundler, eq. `bundle exec theme-specs`;
+- You can opt-in for more concise reporting style (Jekyll's favorite) by using `-f Jekyll::Cucumber::Formatter` option, eq. `bundle exec theme-specs -f Jekyll::Cucumber::Formatter`;
 
 ## Development
 
