@@ -31,6 +31,11 @@ At this point the tool makes quite a few assumptions and very rigid in terms of 
 - Before running your theme's specs, it is a MUST to run `bundle` or `bundle install`;
 - Always run the tool via Bundler, eq. `bundle exec theme-specs`;
 - You can opt-in for more concise reporting style (Jekyll's favorite) by using `-f Jekyll::Cucumber::Formatter` option, eq. `bundle exec theme-specs -f Jekyll::Cucumber::Formatter`;
+- You can blend & validate multiple config files to get desired flavor of Jekyll's configuration on-the-fly (:heart:);
+  - `Given I have "_config.yml" configuration file with "theme" set to "<theme name>"`
+  - `Given I have "features/comments-off.yml" configuration file with "comments_enabled" set to "false"`
+  - `When I run jekyll build --config _config.yml,features/comments-off.yml`
+  - `Then I should get a zero exit status`
 
 There is also [`minima-theme-specs`](https://github.com/ptsurbeleu/minima-theme-specs) repository that is a work in progress of building `minima` theme
 validations. We will start with a few simple things and expand coverage further.
